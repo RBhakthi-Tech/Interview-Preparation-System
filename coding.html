@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coding Practice</title>
+
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+
+<div class="quiz-container">
+
+    <h1>Coding Practice</h1>
+
+    <h3 id="difficulty"></h3>
+
+    <h2 id="title"></h2>
+
+    <p id="problem"></p>
+
+    <br>
+
+    <button onclick="toggleSolution()">
+        Show Solution
+    </button>
+
+    <div id="solutionBox" style="display:none; margin-top:20px;">
+        <h3>Solution</h3>
+
+        <pre id="solution"></pre>
+    </div>
+
+    <br>
+
+    <button onclick="previousQuestion()">
+        Previous
+    </button>
+
+    <button onclick="nextQuestion()">
+        Next
+    </button>
+
+</div>
+
+<script src="js/coding.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Performance Analytics</title>
+
+    <link rel="stylesheet" href="css/analytics.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Performance Analytics</h1>
+
+    <div class="score-cards">
+
+        <div class="card">
+            <h2>Aptitude</h2>
+            <p id="aptitudeScore">0</p>
+        </div>
+
+        <div class="card">
+            <h2>Technical</h2>
+            <p id="technicalScore">0</p>
+        </div>
+
+        <div class="card">
+            <h2>Total</h2>
+            <p id="totalScore">0</p>
+        </div>
+
+    </div>
+
+    <div class="chart-box">
+        <canvas id="scoreChart"></canvas>
+    </div>
+
+    <button onclick="goDashboard()">
+        Back to Dashboard
+    </button>
+
+</div>
+
+<script src="js/analytics.js"></script>
+
+</body>
+</html>

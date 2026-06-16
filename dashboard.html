@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+<button onclick="toggleTheme()">
+    Dark Mode
+</button>
+    <header>
+        <h1>Interview Preparation System</h1>
+
+        <div class="user-section">
+            <span id="welcomeUser"></span>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <main>
+
+        <h2>Choose a Module</h2>
+
+        <div class="cards">
+
+            <div class="card" onclick="openPage('aptitude.html')">
+                <h3>Aptitude Quiz</h3>
+                <p>Practice Quantitative, Logical & Verbal Questions</p>
+            </div>
+
+            <div class="card" onclick="openPage('technical.html')">
+                <h3>Technical Quiz</h3>
+                <p>Java, DBMS, SQL, OS and CN Questions</p>
+            </div>
+
+            <div class="card" onclick="openPage('coding.html')">
+                <h3>Coding Practice</h3>
+                <p>Solve Coding Interview Problems</p>
+            </div>
+
+            <div class="card" onclick="openPage('analytics.html')">
+                <h3>Analytics</h3>
+                <p>Track Performance & Progress</p>
+            </div>
+
+        </div>
+
+    </main>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
